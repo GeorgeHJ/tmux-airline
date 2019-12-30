@@ -22,7 +22,7 @@ set -g status-left-style "bg=#073642,fg=#93a1a1"
 set -g status-right " #[fg=#839496]%d-%b-%y #[fg=#586e75] #[fg=#93a1a1,bold]%H:%M #[fg=#657b83,bg=#073642]#[fg=#93A1A1,bg=#657b83]#[fg=#fdf6e3,bg=#93A1A1,bold]  #H "
 
 # Window status
-set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=default] #{?window_last_flag,#[fg=#268bd2],#[fg=#93a1a1]}#W   "
+set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=default] #{?window_bell_flag,#[fg=#d33682],#{?window_last_flag,#[fg=#268bd2],#[fg=#93a1a1]}}#W   "
 set -g window-status-current-format "#[fg=#073642,bg=#93A1A1]#[fg=#fdf6e3,bold] #I#F  #W #[fg=#93A1A1,bg=#586e75]#[fg=#586e75,bg=#073642,nobold]"
 
 # Current window status
