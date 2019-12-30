@@ -11,7 +11,7 @@ Requires a powerline compatible font and true colour terminal.
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'GeorgeHJ/tmux-airline
+    set -g @plugin 'GeorgeHJ/tmux-airline'
 Hit prefix + I to fetch the plugin and source it. You should see immediate cosmetic changes due to the plugin.
 
 ## Configuration
