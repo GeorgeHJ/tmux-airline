@@ -50,8 +50,8 @@ set -g pane-border-style "bg=default,fg=#073642"
 set -g pane-active-border-style "bg=default,fg=#586e75"
 
 # Pane number indicator
-set -g display-panes-colour #586e75
-set -g display-panes-active-colour #268bd2
+set -g display-panes-colour "#586e75"
+set -g display-panes-active-colour "#268bd2"
 
 # Clock mode
 set -g clock-mode-colour "#93a1a1"
