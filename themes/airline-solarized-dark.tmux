@@ -28,6 +28,10 @@ set -g window-status-current-format "#[fg=#073642,bg=#93A1A1]#[fg=#fdf6e3,bol
 # Current window status
 set -g window-status-style "bg=#073642,fg=#fdf6e3"
 
+# Window with bell status
+# Prevent the bell indicator reversing bg/fg text
+set -g window-status-bell-style "noreverse"
+
 # Window with activity status
 # set -g window-status-activity-bg colour243 # fg and bg are flipped here due to
 # set -g window-status-activity-fg colour233 # a bug in tmux
