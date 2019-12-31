@@ -42,7 +42,7 @@ set -g window-status-bell-style "noreverse"
 
 # Window with activity status
 # fg and bg are flipped here due to a bug in tmux
-set -g window-status-activity-style "bg=colour243,fg=colour233"
+set -g window-status-activity-style "noreverse"
 
 # Window separator
 set -g window-status-separator ""
