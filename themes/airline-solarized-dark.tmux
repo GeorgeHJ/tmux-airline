@@ -12,13 +12,9 @@ set -g status-fg "#586e75"
 set -g status-bg "#073642"
 
 # Left side of status bar
-set -g status-left-style "bg=#657b83,fg=#fdf6e3"
-# set -g status-left-length 40
 set -g status-left "#{?client_prefix,#[fg=#586e75]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#93A1A1]} #S #{?client_prefix,#[fg=#fdf6e3]#[bg=#586e75],#[fg=#93a1a1]#[bg=#586e75]}#[fg=#586e75,bg=#073642]"
 
 # Right side of status bar
-set -g status-left-style "bg=#073642,fg=#93a1a1"
-# set -g status-right-length 150
 set -g status-right " #[fg=#839496]%d-%b-%y #[fg=#586e75] #[fg=#93a1a1,bold]%H:%M #[fg=#657b83,bg=#073642]#[fg=#93A1A1,bg=#657b83]#[fg=#fdf6e3,bg=#93A1A1,bold]  #H "
 
 # Window status
@@ -33,8 +29,7 @@ set -g window-status-style "bg=#073642,fg=#fdf6e3"
 set -g window-status-bell-style "noreverse"
 
 # Window with activity status
-# set -g window-status-activity-bg colour243 # fg and bg are flipped here due to
-# set -g window-status-activity-fg colour233 # a bug in tmux
+# fg and bg are flipped here due to a bug in tmux
 set -g window-status-activity-style "bg=colour243,fg=colour233"
 
 # Window separator
@@ -62,9 +57,5 @@ set -g message-style "bg=#073642,fg=#93a1a1"
 
 # Command message
 set -g message-command-style "bg=#073642,fg=#93a1a1"
-
-# Mode
-# set -g mode-bg "#586e75"
-# set -g mode-fg "#fdf6e3"
 
 # vim: filetype=tmux
