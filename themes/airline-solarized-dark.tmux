@@ -12,16 +12,28 @@ set -g status-fg "#586e75"
 set -g status-bg "#073642"
 
 # Left side of status bar
-set -g status-left "#{?client_prefix,#[fg=#586e75]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#93A1A1]} #S #{?client_prefix,#[fg=#fdf6e3]#[bg=#586e75],#[fg=#93a1a1]#[bg=#586e75]}#[fg=#586e75,bg=#073642]"
+# highlight when prefix is pressed
+set -g status-left "\
+#{?client_prefix,#[fg=#586e75]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#93A1A1]}\
+ #S #{?client_prefix,#[fg=#fdf6e3]#[bg=#586e75],#[fg=#93a1a1]#[bg=#586e75]}\
+#[fg=#586e75,bg=#073642]"
 
 # Right side of status bar
-set -g status-right " #[fg=#839496]%d-%b-%y #[fg=#586e75] #[fg=#93a1a1,bold]%H:%M #[fg=#657b83,bg=#073642]#[fg=#93A1A1,bg=#657b83]#[fg=#fdf6e3,bg=#93A1A1,bold]  #H "
+# date — time — hostname
+set -g status-right "\
+ #[fg=#839496]%d-%b-%y #[fg=#586e75]\
+ #[fg=#93a1a1,bold]%H:%M #[fg=#657b83,bg=#073642]\
+#[fg=#93A1A1,bg=#657b83]#[fg=#fdf6e3,bg=#93A1A1,bold]  #H "
 
 # Window status
-set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=default] #{?window_bell_flag,#[fg=#d33682],#{?window_last_flag,#[fg=#268bd2],#[fg=#93a1a1]}}#W   "
-set -g window-status-current-format "#[fg=#073642,bg=#93A1A1]#[fg=#fdf6e3,bold] #I#F  #W #[fg=#93A1A1,bg=#586e75]#[fg=#586e75,bg=#073642,nobold]"
+set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=default] \
+#{?window_bell_flag,#[fg=#d33682],#{?window_last_flag,#[fg=#268bd2],#[fg=#93a1a1]}}#W   "
 
-# Current window status
+# Current window status format
+set -g window-status-current-format "#[fg=#073642,bg=#93A1A1]#[fg=#fdf6e3,bold] #I#F \
+ #W #[fg=#93A1A1,bg=#586e75]#[fg=#586e75,bg=#073642,nobold]"
+
+# Current window status style
 set -g window-status-style "bg=#073642,fg=#fdf6e3"
 
 # Window with bell status
