@@ -40,10 +40,6 @@ set -g window-status-style "bg=#073642,fg=#fdf6e3"
 # Prevent the bell indicator reversing bg/fg text
 set -g window-status-bell-style "noreverse"
 
-# Window with activity status
-# fg and bg are flipped here due to a bug in tmux
-set -g window-status-activity-style "bg=colour243,fg=colour233"
-
 # Window separator
 set -g window-status-separator ""
 
