@@ -26,7 +26,7 @@ set -g status-right "\
 
 # Window status
 # magenta on bell — yellow on activity — blue for previous
-set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=default] \
+set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=#586e75] \
 #{?window_bell_flag,#[fg=#d33682],\
 #{?window_activity_flag,#[fg=#b58900],\
 #{?window_last_flag,#[fg=#268bd2],\
