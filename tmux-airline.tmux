@@ -1,6 +1,12 @@
 #! /usr/bin/env bash
 
+default_theme="themes/airline-solarized-dark.tmux"
+chosen_theme=""
+theme=$chosen_theme
+
+[[ -z $chosen_theme ]] && theme=$default_theme 
+
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [[ ! $TERM == linux ]]; then
-	tmux source "$CURRENT_DIR/themes/airline-solarized-dark.tmux"
+	tmux source "$CURRENT_DIR/$theme"
 fi
