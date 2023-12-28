@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 default_theme="themes/airline-solarized-dark.tmux"
-chosen_theme=""
+chosen_theme=$(tmux show-options -gqv @chosen_theme)
 theme=$chosen_theme
 
 [[ -z $chosen_theme ]] && theme=$default_theme 
