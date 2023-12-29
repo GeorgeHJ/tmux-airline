@@ -14,7 +14,7 @@ set -g status-bg "#2A2A37"
 # highlight when prefix is pressed
 set -g status-left "\
 #{?client_prefix,#[fg=#252535]#[bg=##C8C093],#[fg=#C8C093]#[bg=#252535]}\
- #S #{?client_prefix,#[fg=#C8C093]#[bg=10],#[fg=#252535]#[bg=10]}\
+ #S #{?client_prefix,#[fg=#C8C093]#[bg=10],#[fg=#252535]#[bg=C8C093]}\
 #[fg=#252535,bg=0]"
 
 # Right side of status bar
