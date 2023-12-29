@@ -20,9 +20,9 @@ set -g status-left "\
 # Right side of status bar
 # date — time — hostname
 set -g status-right "\
- #[fg=15]%d-%b-%y \
- #[fg=15,bold]%H:%M #[fg=#657b83,bg=0]\
-#[fg=#31363B,bg=#252535,bold]  #H "
+ #[fg=#DCD7BA]%d-%b-%y \
+ #[fg=#DCD7BA,bold]%H:%M #[fg=#252535]\
+#[fg=#957FB8,bg=#252535,bold]  #H "
 
 # Window status
 # magenta on bell — yellow on activity — blue for previous
