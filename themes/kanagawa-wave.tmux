@@ -15,7 +15,7 @@ set -g status-bg "#2A2A37"
 set -g status-left "\
 #{?client_prefix,#[fg=#252535]#[bg=#C8C093],#[fg=#C8C093]#[bg=#252535]}\
  #S #{?client_prefix,#[fg=#C8C093]#[bg=#252535],#[fg=#252535]#[bg=C8C093]}\
-#[fg=#DCD7BA,bg=#2A2A37]"
+#[fg=#252535,bg=#2A2A37]"
 
 # Right side of status bar
 # date — time — hostname
@@ -30,7 +30,7 @@ set -g window-status-format "#[fg=#2A2A37,bg=#2A2A37]#[fg=#938AA9] #I#F #[fg=
 #{?window_bell_flag,#[fg=#C34043],\
 #{?window_activity_flag,#[fg=#C0A36E],\
 #{?window_last_flag,#[fg=#7E9CD8],\
-#[fg=#938AA9]}}}#W   "
+#[fg=#DCD7BA]}}}#W   "
 
 # Current window status format
 set -g window-status-current-format "#[fg=#2A2A37,bg=#7E9CD8]#[fg=0,bold] #I#F \
