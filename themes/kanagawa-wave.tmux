@@ -13,9 +13,9 @@ set -g status-bg "#2A2A37"
 # Left side of status bar
 # highlight when prefix is pressed
 set -g status-left "\
-#{?client_prefix,#[fg=10]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#93A1A1]}\
- #S #{?client_prefix,#[fg=#fdf6e3]#[bg=10],#[fg=#93a1a1]#[bg=10]}\
-#[fg=#2A2A37,bg=#252535]"
+#{?client_prefix,#[fg=10]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#252535]}\
+ #S #{?client_prefix,#[fg=#fdf6e3]#[bg=10],#[fg=#252535]#[bg=10]}\
+#[fg=#252535,bg=0]"
 
 # Right side of status bar
 # date — time — hostname
