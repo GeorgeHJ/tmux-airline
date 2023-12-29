@@ -8,7 +8,7 @@ set -g status-interval 2
 
 # Basic status bar colors
 set -g status-fg "10"
-set -g status-bg "0"
+set -g status-bg "#2A2A37"
 
 # Left side of status bar
 # highlight when prefix is pressed
@@ -20,9 +20,9 @@ set -g status-left "\
 # Right side of status bar
 # date — time — hostname
 set -g status-right "\
- #[fg=#839496]%d-%b-%y #[fg=10]\
- #[fg=#93a1a1,bold]%H:%M #[fg=#657b83,bg=0]\
-#[fg=#93A1A1,bg=#657b83]#[fg=#fdf6e3,bg=#93A1A1,bold]  #H "
+ #[fg=15]%d-%b-%y \
+ #[fg=15,bold]%H:%M #[fg=#657b83,bg=0]\
+#[fg=#31363B,bg=#252535,bold]  #H "
 
 # Window status
 # magenta on bell — yellow on activity — blue for previous
