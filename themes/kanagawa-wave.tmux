@@ -14,8 +14,8 @@ set -g status-bg "#2A2A37"
 # highlight when prefix is pressed
 set -g status-left "\
 #{?client_prefix,#[fg=#252535]#[bg=#C8C093],#[fg=#C8C093]#[bg=#252535]}\
- #S #{?client_prefix,#[fg=#C8C093]#[bg=10],#[fg=#252535]#[bg=C8C093]}\
-#[fg=#252535,bg=#C8C093]"
+ #S #{?client_prefix,#[fg=#C8C093]#[bg=#252535],#[fg=#252535]#[bg=C8C093]}\
+#[fg=#252535,bg=#2A2A37]"
 
 # Right side of status bar
 # date — time — hostname
@@ -26,7 +26,7 @@ set -g status-right "\
 
 # Window status
 # red on bell — yellow on activity — blue for previous
-set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=10] \
+set -g window-status-format "#[fg=#2A2A37,bg=#2A2A37]#[fg=#252535] #I#F #[fg=10] \
 #{?window_bell_flag,#[fg=#C34043],\
 #{?window_activity_flag,#[fg=#C0A36E],\
 #{?window_last_flag,#[fg=#7E9CD8],\
