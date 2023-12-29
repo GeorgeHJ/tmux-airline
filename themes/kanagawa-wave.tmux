@@ -7,7 +7,7 @@
 set -g status-interval 2
 
 # Basic status bar colors
-set -g status-fg "10"
+set -g status-fg "#DCD7BA"
 set -g status-bg "#2A2A37"
 
 # Left side of status bar
@@ -15,7 +15,7 @@ set -g status-bg "#2A2A37"
 set -g status-left "\
 #{?client_prefix,#[fg=10]#[bg=#fdf6e3],#[fg=#fdf6e3]#[bg=#93A1A1]}\
  #S #{?client_prefix,#[fg=#fdf6e3]#[bg=10],#[fg=#93a1a1]#[bg=10]}\
-#[fg=10,bg=0]"
+#[fg=#2A2A37,bg=#252535]"
 
 # Right side of status bar
 # date — time — hostname
@@ -28,9 +28,9 @@ set -g status-right "\
 # red on bell — yellow on activity — blue for previous
 set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=10] \
 #{?window_bell_flag,#[fg=#C34043],\
-#{?window_activity_flag,#[fg=##C0A36E],\
-#{?window_last_flag,#[fg=##7E9CD8],\
-#[fg=##938AA9]}}}#W   "
+#{?window_activity_flag,#[fg=#C0A36E],\
+#{?window_last_flag,#[fg=#7E9CD8],\
+#[fg=#938AA9]}}}#W   "
 
 # Current window status format
 set -g window-status-current-format "#[fg=0,bg=#93A1A1]#[fg=#fdf6e3,bold] #I#F \
