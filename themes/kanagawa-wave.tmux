@@ -25,12 +25,12 @@ set -g status-right "\
 #[fg=#957FB8,bg=#252535,bold]  #H "
 
 # Window status
-# magenta on bell — yellow on activity — blue for previous
+# red on bell — yellow on activity — blue for previous
 set -g window-status-format "#[fg=#073642,bg=#073642]#[fg=#93a1a1] #I#F #[fg=10] \
-#{?window_bell_flag,#[fg=#d33682],\
-#{?window_activity_flag,#[fg=#b58900],\
-#{?window_last_flag,#[fg=#268bd2],\
-#[fg=#93a1a1]}}}#W   "
+#{?window_bell_flag,#[fg=#C34043],\
+#{?window_activity_flag,#[fg=##C0A36E],\
+#{?window_last_flag,#[fg=##7E9CD8],\
+#[fg=##938AA9]}}}#W   "
 
 # Current window status format
 set -g window-status-current-format "#[fg=0,bg=#93A1A1]#[fg=#fdf6e3,bold] #I#F \
