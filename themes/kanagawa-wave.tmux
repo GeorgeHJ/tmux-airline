@@ -7,7 +7,7 @@
 set -g status-interval 2
 
 # Basic status bar colors
-set -g status-fg "#DCD7BA"
+set -g status-fg "#C8C093"
 set -g status-bg "#2A2A37"
 
 # Left side of status bar
@@ -22,11 +22,11 @@ set -g status-left "\
 set -g status-right "\
  #[fg=#DCD7BA]%d-%b-%y \
  #[fg=#DCD7BA,bold]%H:%M #[fg=#252535]\
-#[fg=#957FB8,bg=#252535,bold]  #H "
+#[fg=#7E9CD8,bg=#252535,bold]  #H "
 
 # Window status
 # red on bell — yellow on activity — blue for previous
-set -g window-status-format "#[fg=#2A2A37,bg=#2A2A37]#[fg=#DCD7BA,bg=#2A2A37] #I#F #[fg=#DCD7BA,bg=#2A2A37] \
+set -g window-status-format "#[fg=#2A2A37,bg=#2A2A37]#[fg=default,] #I#F #[fg=default] \
 #{?window_bell_flag,#[fg=#C34043],\
 #{?window_activity_flag,#[fg=#C0A36E],\
 #{?window_last_flag,#[fg=#7E9CD8],\
@@ -37,7 +37,7 @@ set -g window-status-current-format "#[fg=#2A2A37,bg=#7E9CD8]#[fg=0,bold] #I#
  #W #[fg=#7E9CD8,bg=#2A2A37,nobold]"
 
 # Current window status style
-set -g window-status-style "bg=0,fg=#fdf6e3"
+set -g window-status-style "bg=0,fg=default"
 
 # Window with bell status
 set -g window-status-bell-style "noreverse"
@@ -55,11 +55,11 @@ set -g status-justify left
 set -g pane-border-style "bg=default,fg=0"
 
 # Active pane border
-set -g pane-active-border-style "bg=default,fg=10"
+set -g pane-active-border-style "bg=default,fg=#76946A"
 
 # Pane number indicator
-set -g display-panes-colour "10"
-set -g display-panes-active-colour "#268bd2"
+set -g display-panes-colour "#7E9CD8"
+set -g display-panes-active-colour "#C8C093"
 
 # Clock mode
 set -g clock-mode-colour "#93a1a1"
